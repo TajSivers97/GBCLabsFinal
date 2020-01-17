@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link href="lab2-2.css" type=text/css rel=stylesheet>
+	<title>Week 2.2 Lab: Forms</title>
+  </head>
+  <body>
+    <br>
+    <form method="get" action="http://www.google.com/search">
+        Search Here Using GOOGLE:<input type="search" name="q" size="30"              maxlength="255">
+        <input type="submit" id="search" value="Search">
+        <br>
+    </form>
+    <form action="register_account.html" method="get"
+      id="registration_form">
+    <fieldset>
+    <legend>Lab Requirements</legend>
+    <label for="Name">Name:</label>
+    <input type="text" name="name" id="name">         
+    <br>
+
+    <input type="radio" name="option" value="Yes">Yes<br>
+    <input type="radio" name="option" value="No">No<br>
+    <input type="radio" name="option" value="Maybe">Maybe<br>
+
+    <select>
+        <option value="Chocolate">Chocolate</option>
+        <option value="Vanilla">Vanilla</option>
+        <option value="Strawberry">Strawberry</option>
+    </select>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password"              required
+           placeholder="At least 6 letters or numbers" 
+           pattern="[a-zA-Z0-9]{6,}"
+           title="Must be at least 6 alphanumeric             characters"><br>
+    <label for="verify">Verify Password:</label>
+    <input type="password" name="verify" id="verify"             required><br>
+</fieldset>
+</form>
+  </body>
+</html>
